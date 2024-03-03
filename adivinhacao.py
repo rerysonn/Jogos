@@ -32,7 +32,7 @@ def jogar():
             print("Digite um numero que seja valido")
             continue 
 
-        print(f"Você digitou {chute}")
+        print(f"Você digitou: {chute}")
 
         acertou = numero_secreto == chute # Caso o usuario acerte o numero secreto com seu chute, o valor deve ser armazenezado na variavel acertou
         chute_menor = numero_secreto > chute # Caso o chute seja menor que o numero secreto, sera armazenado na variavel chute_menor
