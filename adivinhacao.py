@@ -15,12 +15,18 @@ def jogar():
     nivel = int(input("Digite o nivel: "))
     print("-------------------------------")
 
-    if(nivel == 1):
+    facil = nivel == 1
+    medio = nivel == 2
+    dificil = nivel == 3
+
+    if(facil):
         total_jogadas = 15
-    if(nivel == 2):
+    if(medio):
         total_jogadas = 10
-    if(nivel == 3):
+    if(dificil):
         total_jogadas = 5
+
+    
 
 
     for rodada in range(1, total_jogadas + 1):
@@ -48,7 +54,7 @@ def jogar():
                 print("Seu chute foi MENOR que o numero secreto.")
             elif(chute_maior):
                 print("Seu chute foi MAIOR que o numero secreto.")
-            
+       
         pontuacao_perdida = abs(numero_secreto - chute)
         pontos -= pontuacao_perdida
 
