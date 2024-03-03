@@ -34,4 +34,11 @@ while(not acertou and not enforcou):
     acertou = "_" not in letras_acertadas # A Variavel acertou recebe True quando nao existir "_" dentro de letras acertadas
     print(letras_acertadas)
 
+    if(acertou):
+        print("------------------")
+        print(f"Você GANHOU o jogo!!\nA palavra era: {palavra_secreta}")
+    elif(enforcou):
+        print("------------------")
+        print(f"Você perdeu...\nA palavra era: {palavra_secreta}")
+
         
