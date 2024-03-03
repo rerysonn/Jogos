@@ -1,3 +1,5 @@
+import random
+
 print("|--------------------------|")
 print("|      Jogo da forca       |")
 print("|--------------------------|\n")
@@ -16,7 +18,9 @@ for linha in arquivo:
 
 arquivo.close() # Fechar a conexao entre arquivo e codigo
 
-palavra_secreta = palavras[0].upper()
+numero = random.randrange(0, len(palavras))
+palavra_secreta = palavras[numero].upper()
+
 letras_acertadas = ["_" for letra in palavra_secreta]
 
 # Variaveis que começam com valores Falsos
