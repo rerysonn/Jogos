@@ -1,8 +1,22 @@
 print("|--------------------------|")
 print("|      Jogo da forca       |")
-print("|--------------------------|")
+print("|--------------------------|\n")
+print("Dica do jogo: JOGOS")
+print("---------------------\n")
 
-palavra_secreta = "banana".upper()
+
+# Trecho de codigo que faz escolher a palavra dentro de um arquivo .txt separado
+arquivo = open("D:\\Python projetos\\jogos1\\palavras.txt", "r") # No primeiro parametro, voce deve colocar o caminho do arquivo .txt
+palavras = [] # Lista de palavras
+
+#Logica para v
+for linha in arquivo:
+    linha = linha.strip()
+    palavras.append(linha) # Funcao para adicionar strings no final da lista palavras
+
+arquivo.close() # Fechar a conexao entre arquivo e codigo
+
+palavra_secreta = palavras[0].upper()
 letras_acertadas = ["_" for letra in palavra_secreta]
 
 # Variaveis que começam com valores Falsos

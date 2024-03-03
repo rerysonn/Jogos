@@ -25,10 +25,10 @@ def jogar():
 
     for rodada in range(1, total_jogadas + 1):
         print(f"Tentativas {rodada} de {total_jogadas}")
-        chute = int(input("Digite um numero de 1 a 100: ")) # Entrada de dados do usuario.
+        chute = int(input("Digite um numero de 1 a 50: ")) # Entrada de dados do usuario.
 
         # Caso o usuario coloque um numero fora dos permitidos
-        if(chute < 1 or chute > 100):
+        if(chute < 1 or chute > 50):
             print("Digite um numero que seja valido")
             continue 
 
